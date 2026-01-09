@@ -1,1 +1,87 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benicio Balignot - Journalist, Editor, Videographer, Photographer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Benicio Balignot</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="articles.html">News Stories</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>I am Benicio Balignot</h1>
+            <p class="subtitle">Journalist | Editor | Videographer | Photographer</p>
+            <p class="bio">Journalism graduate from the [University of Maryland Philip Merrill College of Journalism]. 
+               Based in [Montgomery County, MD]. Specializing in multimedia journalism and news videography.</p>
+            <div class="social-links">
+                <a href="https://x.com/benicio_ba" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/in/benicio-balignot-373b75214/" target="_blank">LinkedIn</a>
+                <a href="https://muckrack.com/benicio-balignot" target="_blank">Muck Rack</a>
+                <a href="mailto:benicio.balignot@gmail.com">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Featured News Stories</h2>
+            <div id="featured-articles" class="featured-grid"></div>
+            <a href="articles.html" class="view-all-btn">View All Articles →</a>
+        </div>
+    </section>
+
+    <!-- Featured Photos Section -->
+    <section class="featured-section alt-bg">
+        <div class="container">
+            <h2>Featured Photographs</h2>
+            <div id="featured-photos" class="featured-grid"></div>
+            <a href="photography.html" class="view-all-btn">View Photo Gallery →</a>
+        </div>
+    </section>
+
+    <!-- Featured Videos Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Featured Videos</h2>
+            <div id="featured-videos" class="featured-grid"></div>
+            <a href="videos.html" class="view-all-btn">View All Videos →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Benicio Balignot. All rights reserved.</p>
+            <p><a href="mailto:benicio.balignot@gmail.com">Contact me</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Load featured items on homepage
+        document.addEventListener('DOMContentLoaded', function() {
+            loadFeaturedArticles();
+            loadFeaturedPhotos();
+            loadFeaturedVideos();
+        });
+    </script>
+</body>
+</html>
+```
 
