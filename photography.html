@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography - Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Your Name</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">News Stories</a></li>
+                <li><a href="gallery.html" class="active">Photography</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Photography</h1>
+        <p>Visual storytelling through photography</p>
+    </div>
+
+    <section class="container gallery-section">
+        <div class="gallery-controls">
+            <input type="text" id="searchGallery" placeholder="Search photos..." class="search-box">
+            <select id="categoryFilter" class="filter-select">
+                <option value="">All Categories</option>
+                <option value="news">News</option>
+                <option value="portrait">Portrait</option>
+                <option value="landscape">Landscape</option>
+                <option value="event">Event</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div id="gallery-grid" class="gallery-grid"></div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">❮</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-caption"></p>
+                <p id="lightbox-meta" class="photo-meta"></p>
+            </div>
+        </div>
+        <button class="lightbox-next">❯</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p><a href="mailto:your@email.com">Contact me</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadGallery();
+        });
+    </script>
+</body>
+</html>
 
