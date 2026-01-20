@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Stories - Benicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Benicio</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html" class="active">News Stories</a></li>
+                <li><a href="gallery.html">Photography</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>News Stories</h1>
+        <p>All my journalism work and published articles</p>
+    </div>
+
+    <section class="container articles-section">
+        <div class="articles-info">
+            <h2>How to Find My Full Work</h2>
+            <p><strong>View my complete journalism profile on Muck Rack:</strong></p>
+            <a href="https://muckrack.com/benicio-balignot" class="muckrack-button" target="_blank">
+                Open My Muck Rack Profile →
+            </a>
+            <p class="info-note">My Muck Rack profile automatically tracks all my published articles, clips, and coverage across outlets.</p>
+        </div>
+
+        <hr class="divider">
+
+        <h2>Featured Articles</h2>
+        <div id="articles-list" class="articles-grid"></div>
+
+        <hr class="divider">
+
+        <h2>Add Your Own Article Links</h2>
+        <p>Below you can add individual article links that showcase your best work:</p>
+        
+        <div id="articles-manual"></div>
+
+        <div class="add-article-form">
+            <h3>Add a New Article</h3>
+            <form id="articleForm">
+                <div class="form-group">
+                    <label for="articleTitle">Article Title</label>
+                    <input type="text" id="articleTitle" placeholder="Your article headline" required>
+                </div>
+                <div class="form-group">
+                    <label for="articleOutlet">Publication/Outlet</label>
+                    <input type="text" id="articleOutlet" placeholder="e.g., New York Times, NPR" required>
+                </div>
+                <div class="form-group">
+                    <label for="articleDate">Publication Date</label>
+                    <input type="date" id="articleDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="articleURL">Article URL</label>
+                    <input type="url" id="articleURL" placeholder="https://example.com/article" required>
+                </div>
+                <div class="form-group">
+                    <label for="articleDescription">Description/Summary</label>
+                    <textarea id="articleDescription" placeholder="Brief summary of the article" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Add Article</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p><a href="mailto:your@email.com">Contact me</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadArticles();
+            setupArticleForm();
+        });
+    </script>
+</body>
+</html>
 
